@@ -2,7 +2,6 @@
 
 $ ->
 
-  el = document.body
   isOpen = location.hash is '#open'
 
   _animate = ->
@@ -11,15 +10,18 @@ $ ->
     , 1000)
 
   _expand = (options)->
-    $('main, .cover, .link-item').toggleClass 'expanded'
+    $('main, .cover, .links > li, html').toggleClass 'expanded'
     Uno.search.form options.form
 
-  $('#blog-button, #avatar-link').click ->
-    return $('#menu-button').trigger 'click' unless Uno.is 'device', 'desktop'
-    _expand form: 'toggle'
+  $('#menu-button').click ->
+    $('.cover, main, #menu-button, html').toggleClass 'expanded'
 
-  $("#menu-button").click ->
-    $('main, .cover, #menu-button').toggleClass 'expanded'
+  $("#{window.open_button}, #avatar-link").click (event) ->
+    if Uno.is 'page', 'home'
+      event.preventDefault()
+      location.hash = if location.hash is '' then '#open' else ''
+      return $('#menu-button').trigger 'click' unless Uno.is 'device', 'desktop'
+      _expand form: 'toggle'
 
   if (Uno.is 'device', 'desktop') and (Uno.is 'page', 'home')
     _animate()

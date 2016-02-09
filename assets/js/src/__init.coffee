@@ -1,43 +1,48 @@
 'use strict'
 
-$ ->
+window.Uno = Uno =
+  version: '2.7.3'
+  app: do -> document.body
+  is: (k, v=!'undefined') -> this.app.dataset[k] is v
 
-  window.Uno = Uno =
-    version: '2.4.0'
+  context: ->
+    # get the context from the first class name of body
+    # https://github.com/TryGhost/Ghost/wiki/Context-aware-Filters-and-Helpers
+    className = document.body.className.split(' ')[0].split('-')[0]
+    if className is '' then 'error' else className
 
-    search:
-      container: -> $('#results')
-      form: (action) -> $("#search-container")[action]()
+  search:
+    container: -> $('#results')
+    form: (action) -> $('#search-container')[action]()
 
-    loadingBar: (action) -> $(".pace")[action]()
+  loadingBar: (action) -> $('.pace')[action]()
 
-    context: ->
-      # get the context from the first class name of body
-      # https://github.com/TryGhost/Ghost/wiki/Context-aware-Filters-and-Helpers
-      className = document.body.className.split(" ")[0].split("-")[0]
-      if className is "" then 'error' else className
+  timeAgo: (selector) ->
+    $(selector).each ->
+      postDate = $(this).html()
+      postDateInDays = Math.floor((Date.now() - new Date(postDate)) / 86400000)
 
-    is: (property, value) -> document.body.dataset[property] is value
+      if postDateInDays is 0 then postDateInDays = 'today'
+      else if postDateInDays is 1 then postDateInDays = 'yesterday'
+      else postDateInDays = "#{postDateInDays} days ago"
 
-    readTime: ->
-      DateInDays = (selector, cb) ->
-        $(selector).each ->
-          postDate = $(this).html()
-          postDateNow = new Date(Date.now())
-          postDateInDays = Math.floor((postDateNow - new Date(postDate)) / 86400000)
+      $(this).html(postDateInDays)
+      $(this).mouseover -> $(this).html postDate
+      $(this).mouseout -> $(this).html postDateInDays
 
-          if postDateInDays is 0 then postDateInDays = 'today'
-          else if postDateInDays is 1 then postDateInDays = "yesterday"
-          else postDateInDays = "#{postDateInDays} days ago"
+  device: ->
+    w = window.innerWidth
+    h = window.innerHeight
+    return 'mobile' if (w <= 480)
+    return 'tablet' if (w <= 1024)
+    'desktop'
 
-          $(this).html(postDateInDays)
-          $(this).mouseover -> $(this).html(postDate)
-          $(this).mouseout -> $(this).html(postDateInDays)
-      DateInDays ".post.meta > time"
+Uno.app.dataset.page = Uno.context()
+Uno.app.dataset.device = Uno.device()
 
-    device: ->
-      w = window.innerWidth
-      h = window.innerHeight
-      return 'mobile' if (w <= 480)
-      return 'tablet' if (w <= 1024)
-      'desktop'
+# window global properties
+$('#profile-title').text window.profile_title if window.profile_title
+$('#profile-resume').text window.profile_resume if window.profile_resume
+$('#posts-headline').text window.posts_headline if window.posts_headline
+window.open_button = window.open_button or '.nav-posts > a'
+
