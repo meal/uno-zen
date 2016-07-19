@@ -22,15 +22,13 @@
     }
   }
   &.container {
-    font-weight: $font-weight-thin;
-
     text-align: center;
 
     color: $gray-lightest;
 
-    @include font-shadow;
-    @include center-absolute;
-    @include background-filter;
+    @extend %font-shadow;
+    @extend %center-absolute;
+    @extend %background-filter;
   }
 }
 
@@ -51,7 +49,7 @@
 
       font-family: $sans-font;
       font-size: $unit * 1.6;
-      font-weight: $font-weight-bold;
+      font-weight: bold;
 
       letter-spacing: .05rem;
 
@@ -90,7 +88,7 @@
 
           border-radius: 20px;
 
-          @include btn-cover-with-border;
+          @extend %btn-cover-with-border;
 
           > a {
             padding: .625rem 1.25rem;
@@ -105,7 +103,7 @@
           opacity: .8;
           color: $gray-lightest;
 
-          @include btn-cover;
+          @extend %btn-cover;
 
           &:hover {
             color: $hover-color;
@@ -127,7 +125,7 @@
         a {
           padding: 6px 8px 6px 9px;
 
-          @include btn-cover;
+          @extend %btn-cover;
           .label {
             display: none;
           }

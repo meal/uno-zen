@@ -1,7 +1,133 @@
+<a name="2.9.0"></a>
+# 2.9.0 (2016-06-13)
+
+* Adjust mark style ([850a4be](https://github.com/kikobeats/uno-zen/commit/850a4be))
+* Better dev reload ([9998f80](https://github.com/kikobeats/uno-zen/commit/9998f80))
+* javascript factor bundle ([22293ed](https://github.com/kikobeats/uno-zen/commit/22293ed))
+* Little Refactor ([08f0745](https://github.com/kikobeats/uno-zen/commit/08f0745))
+* Remove 5xx URL ([bdbbf8e](https://github.com/kikobeats/uno-zen/commit/bdbbf8e))
+* Update build process ([744d46e](https://github.com/kikobeats/uno-zen/commit/744d46e))
+* Use Google Search instead of GhostHunter ([94e0604](https://github.com/kikobeats/uno-zen/commit/94e0604))
+
+
+
+<a name="2.8.3"></a>
+## 2.8.3 (2016-06-01)
+
+* Remove unnecessary ([422da16](https://github.com/kikobeats/uno-zen/commit/422da16))
+* Update docs link ([19b09d5](https://github.com/kikobeats/uno-zen/commit/19b09d5))
+* Use the same date format ([77ceee8](https://github.com/kikobeats/uno-zen/commit/77ceee8))
+* Use title attribute with a tag ([61ef8ab](https://github.com/kikobeats/uno-zen/commit/61ef8ab))
+
+
+
+<a name="2.8.2"></a>
+## 2.8.2 (2016-05-23)
+
+* Adjust node version ([f74f27e](https://github.com/kikobeats/uno-zen/commit/f74f27e))
+* Adjust search icon ([06dbc32](https://github.com/kikobeats/uno-zen/commit/06dbc32))
+* Quote handlebars helpers ([d8a71dc](https://github.com/kikobeats/uno-zen/commit/d8a71dc))
+* Remove unnecessary dep ([b6818a8](https://github.com/kikobeats/uno-zen/commit/b6818a8))
+* Remove unnecessary escape ([1d854c8](https://github.com/kikobeats/uno-zen/commit/1d854c8))
+* Update README ([3ceeab0](https://github.com/kikobeats/uno-zen/commit/3ceeab0))
+* Update SHOWCASE.md ([849b60e](https://github.com/kikobeats/uno-zen/commit/849b60e))
+* Update SHOWCASE.md ([2192084](https://github.com/kikobeats/uno-zen/commit/2192084))
+* Upgrade Ghost version ([abee6a2](https://github.com/kikobeats/uno-zen/commit/abee6a2))
+* Use HTTPS as possible ([a0d7c07](https://github.com/kikobeats/uno-zen/commit/a0d7c07))
+* Use SASS @mixin & @extend correctly ([1da86e5](https://github.com/kikobeats/uno-zen/commit/1da86e5))
+
+
+
+<a name="2.8.1"></a>
+## 2.8.1 (2016-05-08)
+
+* Adjust style ([ef6b3c3](https://github.com/kikobeats/uno-zen/commit/ef6b3c3))
+
+
+
+<a name="2.8.0"></a>
+# 2.8.0 (2016-05-08)
+
+* Linkify post headers ([b5a0b63](https://github.com/kikobeats/uno-zen/commit/b5a0b63))
+* updated readme file with alternative installation instructions ([cbee6a2](https://github.com/kikobeats/uno-zen/commit/cbee6a2))
+
+
+
+<a name="2.7.9"></a>
+## 2.7.9 (2016-04-12)
+
+* Add @daleanthony as original design ([949fe29](https://github.com/kikobeats/uno-zen/commit/949fe29))
+
+
+
+<a name="2.7.8"></a>
+## 2.7.8 (2016-03-20)
+
+
+* Added new blog to showcase ([d7be966](https://github.com/kikobeats/uno-zen/commit/d7be966))
+* Apply effect in tag version as well. ([266f331](https://github.com/kikobeats/uno-zen/commit/266f331))
+* Merge pull request #183 from binaryfever/patch-1 ([93ff62a](https://github.com/kikobeats/uno-zen/commit/93ff62a))
+* Merge pull request #184 from Mooash/master ([4e1db0c](https://github.com/kikobeats/uno-zen/commit/4e1db0c))
+* Removing blog ([5c92c32](https://github.com/kikobeats/uno-zen/commit/5c92c32))
+* Update ([db0c527](https://github.com/kikobeats/uno-zen/commit/db0c527))
+
+
+
+<a name="2.7.7"></a>
+## 2.7.7 (2016-03-11)
+
+
+* 2.7.7 releases ([509a564](https://github.com/kikobeats/uno-zen/commit/509a564))
+* Add more stuff ([5c0ac0a](https://github.com/kikobeats/uno-zen/commit/5c0ac0a))
+* Add Uno Urban announcement 🎉 ([5702f48](https://github.com/kikobeats/uno-zen/commit/5702f48))
+* Update README.md ([8fc16c8](https://github.com/kikobeats/uno-zen/commit/8fc16c8))
+
+
+
+<a name="2.7.6"></a>
+## 2.7.6 (2016-02-23)
+
+
+* 2.7.6 releases ([b139bba](https://github.com/kikobeats/uno-zen/commit/b139bba))
+* Fix typo ([4624cff](https://github.com/kikobeats/uno-zen/commit/4624cff))
+* Remove unnecessary ([7a8567b](https://github.com/kikobeats/uno-zen/commit/7a8567b))
+
+
+
+<a name="2.7.5"></a>
+## 2.7.5 (2016-02-22)
+
+
+* 2.7.5 releases ([780d021](https://github.com/kikobeats/uno-zen/commit/780d021))
+* Fix line height ([6fb493a](https://github.com/kikobeats/uno-zen/commit/6fb493a))
+* Fix paged views ([6fee7d0](https://github.com/kikobeats/uno-zen/commit/6fee7d0))
+* Remove unnecessary ([c21188f](https://github.com/kikobeats/uno-zen/commit/c21188f))
+* Setup correctly font weight ([f95cdf6](https://github.com/kikobeats/uno-zen/commit/f95cdf6))
+* Setup correctly line-height ([1881c5d](https://github.com/kikobeats/uno-zen/commit/1881c5d))
+* setup root directory ([b4685cb](https://github.com/kikobeats/uno-zen/commit/b4685cb))
+* Use bold keyword ([9199dfd](https://github.com/kikobeats/uno-zen/commit/9199dfd))
+
+
+
+<a name="2.7.4"></a>
+## 2.7.4 (2016-02-20)
+
+
+* 2.7.4 releases ([58c7dac](https://github.com/kikobeats/uno-zen/commit/58c7dac))
+* adjust font base ([2bfbadc](https://github.com/kikobeats/uno-zen/commit/2bfbadc))
+* fix build ([6ed5cb2](https://github.com/kikobeats/uno-zen/commit/6ed5cb2))
+* Fix build ([26cd27a](https://github.com/kikobeats/uno-zen/commit/26cd27a))
+* Fix travis ([1392630](https://github.com/kikobeats/uno-zen/commit/1392630))
+* improve template ([45ca19d](https://github.com/kikobeats/uno-zen/commit/45ca19d))
+* upgrade node ([90e3564](https://github.com/kikobeats/uno-zen/commit/90e3564))
+
+
+
 <a name="2.7.3"></a>
 ## 2.7.3 (2016-02-02)
 
 
+* 2.7.3 releases ([d4ab6cd](https://github.com/kikobeats/uno-zen/commit/d4ab6cd))
 * Adjust cover margins ([e9d257f](https://github.com/kikobeats/uno-zen/commit/e9d257f))
 * Adjust sidebar margins ([7e7ca13](https://github.com/kikobeats/uno-zen/commit/7e7ca13))
 * move into scripts ([72e9522](https://github.com/kikobeats/uno-zen/commit/72e9522))
